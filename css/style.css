@@ -7,11 +7,31 @@ secondary Color (gold): ##FFD700
 
 header {
     background-color: #fef3ea;
-    padding: 10px;
-    margin: 10px;
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
     border-bottom: 3px solid #ffa735;
+    width: 100%;
+  }
+
+
+  nav > ul {
+    list-style-type: none;
+    padding: 0;
   }
   
+  nav > ul > li {
+    display: inline-block;
+    width: 100%
+  }
+
+  nav > ul > li > a {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #4a4a4a;
+  }
+
   body {
       background-color: rgb(255, 255, 255);
       font-family: "Barlow", sans-serif;
@@ -65,7 +85,7 @@ header {
     }
   
     a:hover,
-  a:focus {
+    a:focus {
     color: #cc6540;
     text-decoration: underline;
   }
@@ -101,3 +121,32 @@ header {
       background-color: #ff7f50;
       color: #ffffff;
     }
+
+    /* Layout styling */
+
+    .container {
+      padding: 0 15px;
+    }
+
+    .row {
+      margin: 25px 0; /* 25px top and bottom, 0 left and right */
+    }
+
+    #hero h1 {
+      text-align: center; /* Centers text */
+    }
+
+    .logo {
+      max-width: 250px;
+    }
+
+    #hero {
+      background-color: #ffffff;
+      padding: 20px 0;
+    }
+
+    .img {
+      max-width: 70px;
+    }
+
+    
