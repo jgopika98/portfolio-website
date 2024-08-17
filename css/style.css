@@ -5,43 +5,21 @@ button color (blue): #05676e;
 secondary Color (gold): ##FFD700 
 */
 
-header {
-    background-color: #fef3ea;
-    text-align: center;
-    padding: 10px 0;
-    margin: 0 auto;
-    border-bottom: 3px solid #ffa735;
-    width: 100%;
-  }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  font-family: "Barlow", sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.7;
+  color: rgb(21, 43, 87);
+}
 
 
-  nav > ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  nav > ul > li {
-    display: inline-block;
-    width: 100%
-  }
-
-  nav > ul > li > a {
-    padding: 0 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #4a4a4a;
-  }
-
-  body {
-      background-color: rgb(255, 255, 255);
-      font-family: "Barlow", sans-serif;
-      font-size: 18px;
-      font-weight: 300;
-      font-style: normal;
-      line-height: 1.7;
-      color: rgb(21, 43, 87);
-  }
-  
   h1, h2, h3, h4 {
       line-height: 1.4;
     }
@@ -64,6 +42,7 @@ header {
       font-size: 1.4em;
       font-weight: 400;
       text-transform: uppercase;
+      margin: 10 px;
     }
   
     img {
@@ -138,6 +117,7 @@ header {
 
     .logo {
       max-width: 250px;
+      display: inline-block;
     }
 
     #hero {
@@ -145,8 +125,44 @@ header {
       padding: 20px 0;
     }
 
-    .img {
+    .social a {
       max-width: 70px;
+      display:inline-block;
+    }
+
+    header {
+      background-color: #fef3ea;
+      text-align: center;
+      padding: 10px 0;
+      margin: 0 auto;
+      border-bottom: 3px solid #ffa735;
+      width: 100%;
+    }
+
+    nav > ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    
+    nav > ul > li {
+      display: inline-block;
+    }
+  
+    nav > ul > li > a {
+      padding: 0 15px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: #4a4a4a;
+    }
+
+    /* Header Footer */
+
+    footer {
+      text-align: center;
+    }
+
+    .project {
+      margin-bottom: 100 px;
     }
 
     
