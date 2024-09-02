@@ -129,7 +129,7 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   display: inline-block;
 }
 
@@ -147,20 +147,20 @@ a:active {
 
 header {
   background-color: #fef3ea;
-  text-align: center;
-  padding: 10px 0;
+  padding: 10px 0 4px;
   margin: 0 auto;
   border-bottom: 3px solid #ffa735;
   width: 100%;
 }
 
-nav>ul {
-  list-style-type: none;
-  padding: 0;
+main {
+  padding-top: 56px;
 }
 
-nav>ul>li {
-  display: inline-block;
+nav >ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 nav>ul>li>a {
@@ -169,6 +169,42 @@ nav>ul>li>a {
   font-weight: 700;
   color: #4a4a4a;
 }
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,127,80,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
 
 /* Header Footer */
 
@@ -224,6 +260,23 @@ footer {
 
 /* Medium devices (640px and larger)*/
 @media only screen and (min-width: 640px) {
+
+  nav > ul > li {
+    display: inline-block;
+  }
+
+  nav > ul {
+    margin: 1em 0;
+  }
+  
+
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
+  }
+
+  .logo {
+    max-width: 250 px;
+  }
 
 .col-md-1 {width: 8.33%;}
 .col-md-2 {width: 16.66%;}
@@ -282,6 +335,10 @@ footer {
   /* Large devices (1024px and larger)*/
   @media only screen and (min-width: 1024px) {
 
+    .logo {
+      max-width: 250 px;
+    }
+
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
     .col-lg-3 {width: 25%;}
@@ -295,6 +352,9 @@ footer {
     .col-lg-11 {width: 91.66%;}
     .col-lg-12 {width: 100%;}
     
+    .navtoggle li:last-child {
+      display: none;
+    }
 
     .container {
       max-width: 1200px;
@@ -340,6 +400,10 @@ footer {
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
+      }
+
+      .navtoggle li:last-child {
+        display: none;
       }
     }
 

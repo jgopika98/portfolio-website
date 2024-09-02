@@ -2,6 +2,8 @@
 <html lang="en" dir="ltr">
 
 <head>
+    <script src="https://kit.fontawesome.com/94003bb3c3.js" crossorigin="anonymous"></script>
+    
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -18,12 +20,15 @@
 <body>
     <header>
         <div class="container">
+            <div class="navtoggle" id="myNavtoggle">
             <a href="index.html" class="logo"><img src="imgs/vela/logo.png" alt="Logo"></a>
+            
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="#">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
         </div>
@@ -1671,6 +1676,8 @@
             </div>
         </div>
     </footer>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
