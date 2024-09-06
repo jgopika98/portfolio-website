@@ -328,9 +328,15 @@ footer {
 
   #hero span {
     display: block;
+  }
+
+  .navtoggle li:last-child {
+    display: none;
 
 
   }
+
+}
 
   /* Large devices (1024px and larger)*/
   @media only screen and (min-width: 1024px) {
@@ -360,6 +366,8 @@ footer {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
+
+    }
 
       header {
         text-align: unset;
@@ -392,20 +400,5 @@ footer {
       #hero span {
         display: block;
       }
-    }
-
-    /* X-Large devices (1440px and larger)*/
-    @media only screen and (min-width: 1440px) {
-      .container {
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
-      .navtoggle li:last-child {
-        display: none;
-      }
-    }
 
   }
-}
